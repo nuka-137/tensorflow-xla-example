@@ -1,0 +1,20 @@
+licenses(["restricted"])
+
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "plugin_lib",
+    srcs = glob([
+        "*.cc",
+    ]),
+    hdrs = glob([
+        "*.h",
+    ]),
+    deps = [
+        "//third_party/eigen3",
+        "//tensorflow/compiler/xla:xla_headers_lib",
+        "//tensorflow/compiler/xla/service:hlo_evaluator",
+        "//tensorflow/compiler/jit:xla_jit_headers_lib",
+    ],
+)
+
