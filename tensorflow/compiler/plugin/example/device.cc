@@ -33,7 +33,10 @@ Status XlaMyDevFactory::CreateDevices(const SessionOptions& session_options,
     RegisterXlaDeviceKernels(DEVICE_XLA_MYDEV, DEVICE_MYDEV_XLA_JIT);
   (void)registrations;
 
+  TF_ASSIGN_OR_RETURN(auto platform, stream_executor::MultiPlatformManager::PlatformWithName("MyDev"));
+
   XlaDevice::Options options;
+  options.platform = platform;
   options.device_name_prefix = name_prefix;
   options.device_name = DEVICE_XLA_MYDEV;
   options.device_ordinal = 0;
