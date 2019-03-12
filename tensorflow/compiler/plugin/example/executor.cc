@@ -1,14 +1,8 @@
 #include "tensorflow/compiler/plugin/example/executor.h"
 #include "tensorflow/compiler/plugin/example/platform_id.h"
 
-#include <string.h>
-
 #include "tensorflow/core/platform/profile_utils/cpu_utils.h"
-#include "tensorflow/stream_executor/host/host_platform_id.h"
-#include "tensorflow/stream_executor/host/host_stream.h"
-#include "tensorflow/stream_executor/host/host_timer.h"
-#include "tensorflow/stream_executor/lib/statusor.h"
-#include "tensorflow/stream_executor/plugin_registry.h"
+
 
 namespace stream_executor {
 namespace mydevplugin {

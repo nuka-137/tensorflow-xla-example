@@ -1,8 +1,6 @@
 #ifndef TENSORFLOW_STREAM_EXECUTOR_EXAMPLE_PLATFORM_ID_H_
 #define TENSORFLOW_STREAM_EXECUTOR_EXAMPLE_PLATFORM_ID_H_
 
-#include "tensorflow/stream_executor/platform.h"
-
 namespace stream_executor {
 namespace mydevplugin {
 

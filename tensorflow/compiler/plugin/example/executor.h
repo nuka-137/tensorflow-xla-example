@@ -1,14 +1,11 @@
 #ifndef TENSORFLOW_STREAM_EXECUTOR_PLUGIN_EXAMPLE_EXECUTOR_H_
 #define TENSORFLOW_STREAM_EXECUTOR_PLUGIN_EXAMPLE_EXECUTOR_H_
 
-#include "tensorflow/stream_executor/blas.h"
+#include "tensorflow/stream_executor/stream_executor_internal.h"
+#include "tensorflow/stream_executor/stream_executor.h"
 #include "tensorflow/stream_executor/host/host_stream.h"
 #include "tensorflow/stream_executor/host/host_timer.h"
-#include "tensorflow/stream_executor/lib/error.h"
-#include "tensorflow/stream_executor/lib/status.h"
-#include "tensorflow/stream_executor/rng.h"
-#include "tensorflow/stream_executor/stream_executor.h"
-#include "tensorflow/stream_executor/stream_executor_internal.h"
+
 
 namespace stream_executor {
 namespace mydevplugin {

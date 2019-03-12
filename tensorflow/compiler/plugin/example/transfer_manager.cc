@@ -1,26 +1,6 @@
 #include "tensorflow/compiler/plugin/example/transfer_manager.h"
 #include "tensorflow/compiler/plugin/example/platform_id.h"
 
-#include <string>
-#include <utility>
-#include <vector>
-
-#include "absl/memory/memory.h"
-#include "tensorflow/compiler/xla/literal.h"
-#include "tensorflow/compiler/xla/literal_util.h"
-#include "tensorflow/compiler/xla/service/cpu/cpu_runtime.h"
-#include "tensorflow/compiler/xla/shape_util.h"
-#include "tensorflow/compiler/xla/status_macros.h"
-#include "tensorflow/compiler/xla/statusor.h"
-#include "tensorflow/compiler/xla/types.h"
-#include "tensorflow/compiler/xla/util.h"
-#include "tensorflow/compiler/xla/xla_data.pb.h"
-#include "tensorflow/core/lib/core/errors.h"
-#include "tensorflow/core/lib/gtl/cleanup.h"
-#include "tensorflow/core/platform/logging.h"
-#include "tensorflow/core/platform/notification.h"
-#include "tensorflow/core/platform/stream_executor_no_cuda.h"
-#include "tensorflow/stream_executor/stream_executor.h"
 
 namespace xla {
 namespace mydevplugin {

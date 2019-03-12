@@ -2,13 +2,7 @@
 #include "tensorflow/compiler/plugin/example/platform_id.h"
 #include "tensorflow/compiler/plugin/example/executor.h"
 
-#include "tensorflow/stream_executor/host/host_gpu_executor.h"
-#include "tensorflow/stream_executor/host/host_platform_id.h"
-#include "tensorflow/stream_executor/lib/error.h"
-#include "tensorflow/stream_executor/lib/initialize.h"
 #include "tensorflow/stream_executor/lib/ptr_util.h"
-#include "tensorflow/stream_executor/lib/status.h"
-#include "tensorflow/stream_executor/lib/status_macros.h"
 #include "tensorflow/stream_executor/lib/stringprintf.h"
 
 

@@ -1,20 +1,11 @@
 #ifndef TENSORFLOW_COMPILER_EXAMPLE_COMPILER_H_
 #define TENSORFLOW_COMPILER_EXAMPLE_COMPILER_H_
 
-#include <memory>
-
-#include "absl/types/span.h"
 #include "tensorflow/compiler/xla/service/compiler.h"
-#include "tensorflow/compiler/tf2xla/cpu_function_runtime.h"
-#include "tensorflow/compiler/xla/service/executable.h"
-#include "tensorflow/compiler/xla/service/hlo_module.h"
-#include "tensorflow/compiler/xla/statusor.h"
-#include "tensorflow/core/platform/macros.h"
-#include "tensorflow/core/platform/stream_executor_no_cuda.h"
+
 
 namespace xla {
 namespace mydevplugin {
-
 
 class MyDevCompiler : public Compiler {
  public:
